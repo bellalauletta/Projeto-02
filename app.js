@@ -1,3 +1,5 @@
+let numeroSecreto = GerarNumeroAleatorio();
+
 //let titulo = document.querySelector("h1");
     //titulo.innerHTML = "Jogo do número secreto";
 
@@ -13,6 +15,9 @@ exibirTextoNaTela("p", "Tente advinhar o número secreto entre 1 e 10");
 
 
     function verificarChute() { 
-        console.log("o botão foi clicado")
+        console.log("numero secreto");
     }
     
+    function GerarNumeroAleatorio() {
+      return parseInt(Math.random() * 10 + 1);
+    }
